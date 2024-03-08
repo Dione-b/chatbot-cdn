@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+	background: var(--main-white-color);
+	font-family: 'Roboto', sans-serif;
+}
+.card{
+	width: 300px;
+	border: none;
+	border-radius: 15px;
+}
+.adiv{
+	background: var(--main-secondary-color);
+	border-radius: 15px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	font-size: 22px;
+}.title{
+    font-weight: bold;
+    color: var(--main-white-color);
+    
+}
+
+
