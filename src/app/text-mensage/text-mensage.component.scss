@@ -1,20 +1,23 @@
 
 .btn{
-	color: var(--main-secondary-color);
+	color: var(--main-background-color);
 }
 .form-group{
+	border-radius: 15px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 	background-color: var(--main-secondary-color);
+	padding: 20px;
 }
-.form-control:focus{
-	box-shadow: none;
-	}
-.form-control input{
-	border-radius: 12px;
-	// border: 2px solid var(--main-secondary-color);
-	background-color: var(--main-primary-color);
-	font-size: 12px;
-}
+
 .form-control::placeholder{
 	font-size: 12px;
 	color: #C4C4C4;
+}
+
+.form-control input{
+	border-radius: 15px;
+	background-color: var(--main-primary-color);
+	font-size: 12px;
+	color: var(--main-background-color);
 }
