@@ -1,5 +1,21 @@
 
 .btn{
+
+	color: var(--main-secondary-color);
+}
+.form-group{
+	background-color: var(--main-secondary-color);
+}
+.form-control:focus{
+	box-shadow: none;
+	}
+.form-control input{
+	border-radius: 12px;
+	// border: 2px solid var(--main-secondary-color);
+	background-color: var(--main-primary-color);
+	font-size: 12px;
+}
+
 	color: var(--main-background-color);
 }
 .form-group{
@@ -10,10 +26,12 @@
 	padding: 20px;
 }
 
+
 .form-control::placeholder{
 	font-size: 12px;
 	color: #C4C4C4;
 }
+
 
 .form-control input{
 	border-radius: 15px;
@@ -21,3 +39,4 @@
 	font-size: 12px;
 	color: var(--main-background-color);
 }
+

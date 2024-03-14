@@ -4,6 +4,8 @@
     --main-secondary-color:#858BF2;
     --main-highlight-color:#04BF9D; 
     --main-white-color:#F2F2F2;
+
+    --main-bg-gradient:#F2F2F2;
   }
   body *{
     margin: 0px;
@@ -13,4 +15,5 @@
   body{
     background: rgb(41,42,64);
     background: linear-gradient(52deg, rgba(41,42,64,1) 0%, rgba(118,114,242,1) 90%, rgba(133,139,242,1) 100%);
+
   }
