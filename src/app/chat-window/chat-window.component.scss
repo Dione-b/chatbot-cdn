@@ -2,6 +2,7 @@
 body{
     margin: 0px;
     padding: 0px;
+
 	background: var(--main-white-color);
 	font-family: 'Roboto', sans-serif;
 }
@@ -12,11 +13,33 @@ body{
 }
 .adiv{
 	background: var(--main-secondary-color);
+
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	border-radius: 15px;
+	width: 50%;
+}
+.card{
+	border-radius: 15px;
+	background: var(--main-white-color);
+	box-shadow: 0px 10px 34px 7px rgba(0,0,0,0.5);
+	
+}
+.header-chat{	
+	background-color: var(--main-secondary-color);
+
 	border-radius: 15px;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 	font-size: 22px;
+
 }.title{
+=======
+	box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.2);
+}
+.title{
+
     font-weight: bold;
     color: var(--main-white-color);
     
