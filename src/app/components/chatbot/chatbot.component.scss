@@ -1,0 +1,243 @@
+/* Variables for colors */
+$primary-color: #605ced;
+$secondary-color: #4646f7;
+$background-color: #fff;
+$text-color: #fafafa;
+
+/* Message bubble styles */
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-bottom: 125px;
+  padding-top: 50px;
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+}
+
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.user-message-container {
+  display: flex;
+  justify-self: right;
+  flex-direction: row-reverse;
+  justify-self: flex-end;
+}
+
+.bot-message-container {
+  display: flex;
+  width: fit-content;
+  justify-self: flex-start;
+}
+
+.user-message-text,
+.bot-message-text {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  height: fit-content;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-message-text {
+  background: linear-gradient(to left bottom, #8989fa, #9589fa, #a6a3f5);
+  color: #f4f4fa;
+  padding: 10px;
+  border-radius: 10px 10px 0 10px;
+
+  clear: both;
+}
+.user-img {
+  width: 70px;
+  margin-top: 15px;
+  border-radius: 50px;
+  border: 5px solid #4646f7;
+  padding: 5px;
+  margin: 0px 10px 0 10px;
+}
+
+.bot-img,
+.user-img {
+  width: 70px;
+  height: 70px !important;
+  margin-top: 15px;
+  border-radius: 50px;
+  border: 5px solid #4646f7;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.bot-message-text {
+  background: linear-gradient(to right bottom, #4646f7, #5c4cf7, #605ced);
+  color: #f4f4fa;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+}
+
+/* Input container styles */
+.input-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  align-self: center;
+  bottom: 10%;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Semi-transparent white background */
+  backdrop-filter: blur(20px);
+  /* Blur effect */
+  padding: 10px;
+  /* Add padding for spacing inside the container */
+  border-radius: 10px;
+  /* Optional: border radius for rounded corners */
+
+  button {
+    background-color: $primary-color;
+    /* Pastel red button */
+    color: white;
+    border: none;
+    /* Remove the border */
+    border-radius: 10px;
+    padding: 10px !important;
+    margin: 0 0 0 10px;
+    position: sticky;
+    bottom: 15%;
+    right: 2%;
+    cursor: pointer;
+
+    .bx-up-arrow-alt {
+      font-size: 25pxpx;
+    }
+
+    /* Fun, comic-style font */
+  }
+
+  textarea {
+    flex: 1;
+    /* Flex grow to fill available space */
+    padding: 0px;
+    /* Padding for text */
+    border: none;
+    /* Remove border */
+    color: $primary-color;
+    border-radius: 5px;
+    /* Border radius */
+    margin: 0 10px;
+    /* Margin */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    /* Transparent background */
+    outline: none;
+    /* Remove outline */
+    resize: none;
+
+    &::placeholder {
+      color: $primary-color;
+      opacity: 0.6;
+    }
+
+    &:focus {
+      height: auto;
+      /* Allows the textarea to grow in height on focus */
+    }
+  }
+}
+
+.gradient-border {
+  border: 4px solid $primary-color;
+  border-radius: 25px;
+}
+
+/* Animation for message bubbles */
+.message-enter-active,
+.message-leave-active {
+  transition: all 0.5s;
+}
+
+.message-enter,
+.message-leave-to {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+/* Styles for the chat container */
+.chat-container {
+  max-width: 98%;
+  margin: 0;
+  padding: 30px;
+  height: 100vh;
+  /* Make the chat container take the full viewport height */
+  background-color: $background-color;
+  border: none;
+  /* Remove the border */
+  display: flex;
+  flex-direction: column-reverse;
+  /* Reverse the order of messages to display new messages at the bottom */
+  justify-content: flex-end;
+  /* Align messages to the bottom */
+}
+
+/* Styles for the error message */
+.error-message {
+  background-color: #ff5733;
+  /* Red background for error message */
+  color: white;
+  /* White text color */
+  border-radius: 10px;
+  padding: 10px;
+  clear: both;
+}
+
+/* Styles for the loading message */
+/* Style for the loading message */
+.loading-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Define your base font size */
+$base-font-size: 20px;
+
+/* Chat container styles */
+.chat-container {
+  /* ... other styles ... */
+
+  /* Responsive font size */
+  font-size: $base-font-size;
+  /* Set a base font size */
+}
+
+/* Define media queries for responsive font size */
+@media screen and (min-width: 768px) {
+  /* Larger font size for wider viewports */
+  .chat-container {
+    font-size: calc(#{$base-font-size} + 2px);
+    /* Increase font size */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Smaller font size for narrower viewports */
+  .chat-container {
+    font-size: calc(#{$base-font-size} - 2px);
+    /* Decrease font size */
+  }
+}
+
+/* Button and input styles */
+input[type="text"],
+button {
+  padding: 10px;
+  font-size: $base-font-size;
+  /* Set the base font size for input and button */
+}

@@ -1,0 +1,42 @@
+<div class="chat-container">
+    <!-- Messages -->
+    <div class="messages" #messagesContainer>
+
+        <div *ngFor="let message of messages"
+            [ngClass]="{ 'user-message-container': message.user, 'bot-message-container': !message.user }">
+            <!-- Conditional image rendering -->
+
+            <img [src]="message.user ? userImagePath : botImagePath" [alt]="message.user ? 'User' : 'Chatbot'"
+                [ngClass]="{ 'user-img': message.user, 'bot-img': !message.user }">
+            
+            <!-- Message text -->
+            <div [ngClass]="{ 'user-message-text': message.user, 'bot-message-text': !message.user }">
+                {{ message.text }}
+            </div>
+        </div>
+
+        <!-- Loading message -->
+        <div class="bot-message-container">
+            <img [src]=botImagePath [alt]="'Chatbot'" [ngClass]="{ 'bot-img': true }" *ngIf="isLoading">
+            <div class="message bot-message-text" *ngIf="isLoading">
+                Digitando...
+            </div>
+        </div>
+
+        <!-- Error message -->
+        <div class="bot-message-container">
+            <img [src]=botImagePath [alt]="'Chatbot'" 
+            [ngClass]="{ 'bot-img': true }" *ngIf="errorOcurred"/>
+            <div class="message bot-message-text" *ngIf="errorOcurred">
+                {{ customErrorMessage }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Input form -->
+    <div class="input-container gradient-border">
+    <textarea class="gradient-border" [(ngModel)]="userInput" (keyup.enter)="sendMessage()" (input)="autoGrow($event)" placeholder="Type a message..."></textarea>
+    <button (click)="sendMessage()"><i class="bx bx-up-arrow-alt"></i></button>
+</div>
+
+</div>
