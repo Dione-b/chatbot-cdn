@@ -1,0 +1,20 @@
+.sender {
+	border: none;
+	background: var(--main-highlight-color);
+	font-size: 12px;
+	border-radius: 20px;
+}
+
+.recipient{
+	background: var(--main-white-color);
+	border: 1px solid #E7E7E9;
+	font-size: 12px;
+	border-radius: 20px;
+}
+
+.myvideo img{
+	border-radius: 20px
+}
+.dot{
+	font-weight: bold;
+}
