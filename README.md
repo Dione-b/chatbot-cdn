@@ -1,27 +1,54 @@
-# ChatbotCDN
+# Chatbot with Angular, TypeScript, and OpenAI's ChatGPT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+Welcome to the repository of a dynamic chatbot built using Angular, TypeScript, and integrated with OpenAI's ChatGPT. This project aims to demonstrate the powerful combination of modern web development techniques and cutting-edge AI.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This chatbot application is an interactive tool that can converse intelligently with users. Built with Angular and TypeScript, it showcases robust frontend development practices, while its integration with OpenAI's ChatGPT allows for responsive and intelligent interactions.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular-based Frontend**: Utilizes Angular for a responsive and dynamic user interface.
+- **TypeScript Integration**: Ensures type safety and enhances code quality and maintainability.
+- **OpenAI ChatGPT API**: Integrates with OpenAI's ChatGPT for smart conversational capabilities.
+- **SCSS for Styling**: Uses SCSS for advanced styling features.
+- **Vercel Deployment**: Instructions included for deploying the app on Vercel for global access.
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+These instructions will get your copy of the project up and running on your local machine for development and testing purposes.
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js
+- Angular CLI
+- An account with OpenAI and access to its API keys
 
-## Running end-to-end tests
+### Running the Application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Start the development server:**
+   ```sh
+   ng serve
+   ```
+2. **Open your browser and navigate to:**
+   ```
+   http://localhost:4200/
+   ```
 
-## Further help
+## Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Dione Bastos - [@dione-b](https://github.com/Dione-b)
